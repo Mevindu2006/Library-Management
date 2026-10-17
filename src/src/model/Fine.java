@@ -1,3 +1,5 @@
+package model;
+
 public class Fine {
     private String fineId;
     private Loan loan;
@@ -41,9 +43,9 @@ public class Fine {
     }
 
     public void displayDetails(){
-        System.out.println("Fine ID: " + getFineId());
-        System.out.println("Loan ID: " + getLoan().getLoanId());
-        System.out.println("Fine Amount: LKR " + getAmount());
+        System.out.println("model.Fine ID: " + getFineId());
+        System.out.println("model.Loan ID: " + getLoan().getLoanId());
+        System.out.println("model.Fine Amount: LKR " + getAmount());
         System.out.println("Paid: " + isPaid());
     }
 

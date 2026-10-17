@@ -1,3 +1,5 @@
+package model;
+
 import java.time.LocalDate;
 
 public class Loan {
@@ -47,8 +49,8 @@ public class Loan {
 
     public void displayDetails(){
         System.out.println(getLoanId());
-        System.out.println("Member: " + getMember());
-        System.out.println("Book: " + getBook());
+        System.out.println("model.Member: " + getMember());
+        System.out.println("model.Book: " + getBook());
         System.out.println(getBorrowDate());
         System.out.println(getDueDate());
         System.out.println(returnDate);

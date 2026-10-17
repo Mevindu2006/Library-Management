@@ -1,3 +1,5 @@
+package model;
+
 public class Book {
     private String bookId;
     private String title;
@@ -51,7 +53,7 @@ public class Book {
     }
 
     public void displayDetails(){
-        System.out.println("Book ID: " + getBookId());
+        System.out.println("model.Book ID: " + getBookId());
         System.out.println("Title: " + getTitle());
         System.out.println("Author: " + getAuthor());
         System.out.println("ISBN: " + getIsbn());

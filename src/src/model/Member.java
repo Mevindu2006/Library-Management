@@ -1,3 +1,5 @@
+package model;
+
 public class Member extends Person{
     private String membershipId;
     private int borrowedBooksCount;

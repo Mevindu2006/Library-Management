@@ -1,4 +1,6 @@
-public class Librarian extends Person{
+package model;
+
+public class Librarian extends Person {
     private String employeeId;
     private String position;
 

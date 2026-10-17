@@ -1,3 +1,5 @@
+import model.*;
+
 import java.time.LocalDate;
 
 public class Main {
@@ -8,7 +10,7 @@ public class Main {
         Member member = new Member(101, "Alex Perera", "alex@example.com", "MEM001", 2);
         member.displayDetails();
 
-        Librarian librarian = new Librarian(201, "Sarah Fernando", "sarah@example.com", "EMP001", "Head Librarian");
+        Librarian librarian = new Librarian(201, "Sarah Fernando", "sarah@example.com", "EMP001", "Head model.Librarian");
         librarian.displayDetails();
 
         Loan loan = new Loan("L001", member, book, LocalDate.of(2026, 10, 16), LocalDate.of(2026, 10, 30));
