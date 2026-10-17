@@ -1,3 +1,5 @@
+package model;
+
 import java.time.LocalDate;
 
 public class Loan {
@@ -45,13 +47,22 @@ public class Loan {
         return returnDate == null && currentDate.isAfter(dueDate);
     }
 
-    public void displayDetails(){
-        System.out.println(getLoanId());
-        System.out.println("Member: " + getMember());
-        System.out.println("Book: " + getBook());
-        System.out.println(getBorrowDate());
-        System.out.println(getDueDate());
-        System.out.println(returnDate);
+
+
+    public void displayDetails() {
+
+        System.out.println("Loan ID: " + getLoanId());
+
+        System.out.println("Member Name: " + getMember().getName());
+
+        System.out.println("Book Title: " + getBook().getTitle());
+
+        System.out.println("Borrow Date: " + getBorrowDate());
+
+        System.out.println("Due Date: " + getDueDate());
+
+        System.out.println("Return Date: " +
+                (returnDate == null ? "Not Returned" : returnDate));
     }
 
 
