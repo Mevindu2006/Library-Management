@@ -13,5 +13,18 @@ public class Main {
 
         Loan loan = new Loan("L001", member, book, LocalDate.of(2026, 10, 16), LocalDate.of(2026, 10, 30));
         loan.displayDetails();
+
+        Fine fine = new Fine("F001", loan);
+
+        fine.calculateAmount(3);
+
+        System.out.println("===== BEFORE PAYMENT =====");
+        fine.displayDetails();
+
+        fine.payFine();
+
+        System.out.println("\n===== AFTER PAYMENT =====");
+        fine.displayDetails();
+
     }
 }
